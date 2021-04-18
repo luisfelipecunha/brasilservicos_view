@@ -7,13 +7,18 @@
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
+    "noImplicitAny": false,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "reflect-metadata",
+      "vuetify",
+      "jest"
     ],
     "paths": {
       "@/*": [
@@ -21,6 +26,10 @@
       ]
     },
     "lib": [
+      "es2015",
+      "es2017",
+      "es7",
+      "es6",
       "esnext",
       "dom",
       "dom.iterable",
